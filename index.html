@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body class="bg-zinc-900 text-white">
+
+    <div class="flex gap-x-2 justify-center items-center h-screen">
+
+      <form id="taskForm" class="bg-zinc-700 p-10 rounded-md max-w-md">
+        
+        <label for="title" class="block">Title</label>
+        <input type="text" class="bg-gray-700 px-1 py-2 w-full border border-blue-500 hover:border-blue-200 transition-colors rounded-md mb-2" name="title" placeholder="Write the title" />
+  
+        <label for="description" class="block">Description:</label>
+        <textarea name="description" rows="3" class="bg-gray-700 px-1 border border-blue-500 hover:border-blue-200 transition-colors py-2 mb-2 rounded-md block w-full" placeholder="write a description"></textarea>
+  
+        <button class="bg-blue-600 rounded-md px-3 py-1 hover:bg-blue-500 transition-colors">Save</button>
+      </form>
+  
+      <div id="tasksList" class="max-w-md w-full h-3/5 p-10 overflow-y-scroll"></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
